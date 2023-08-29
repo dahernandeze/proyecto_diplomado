@@ -56,13 +56,30 @@ function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
     drawPaddle();
-     //limites y rebote de bolita por colision en muros
+     //limites y rebote de bolita por colision en muros izquierdo derecho
     if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
         dx = -dx;
     }
-    if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+    //limites y rebote de bolita por colision en muros arriba  abajo
+    // if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+    //     dy = -dy;
+    // }
+
+    //quito el limite inferior 
+    if(y + dy < ballRadius) {
         dy = -dy;
     }
+    else if(y + dy > canvas.height-ballRadius) {
+        if(x > paddleX && x < paddleX + paddleWidth) {
+            dy = -dy;
+        }
+        else {
+            alert("GAME OVER");
+            document.location.reload();
+            clearInterval(interval); // Needed for Chrome to end game
+        }
+    }
+
     
     if(rightPressed) {
         paddleX += 7;
@@ -81,6 +98,9 @@ function draw() {
     y += dy;
 }
 //funcion autogenerada hasta que sea detenida
-setInterval(draw, 100);
+//setInterval(draw, 100);
+
+const interval = setInterval(draw, 10);
+
 
 
