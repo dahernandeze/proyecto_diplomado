@@ -15,16 +15,6 @@ var paddleX = (canvas.width-paddleWidth)/2;
 var rightPressed = false;
 var leftPressed = false;
 
-
-//variables de los ladrillos
-
-//variable marcador
-
-let score = 0;
-let speed =12;
-let delay =0;
-
-
 document.addEventListener("keydown", keyDownHandler, false); //keydown detecta cuando presiono teclado
 document.addEventListener("keyup", keyUpHandler, false);    //keyup detecta cuando dejo de presionar teclado
 
@@ -49,7 +39,7 @@ function keyUpHandler(e) {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "#0015DD";
+    ctx.fillStyle = "#0095DD";
     ctx.fill();
     ctx.closePath();
 }
@@ -61,22 +51,11 @@ function drawPaddle() {
     ctx.fill();
     ctx.closePath();
 }
-// funcion para crear el marcador y ver la velocidad
-
-function drawScore() {
-    ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
-    ctx.fillText("Score: "+score, 8, 20);
-    ctx.fillText("Speed: "+speed, 8, 40);
-  }
  //movimiento bolita
-
-
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
     drawPaddle();
-    drawScore();
      //limites y rebote de bolita por colision en muros izquierdo derecho
     if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
         dx = -dx;
@@ -93,10 +72,6 @@ function draw() {
     else if(y + dy > canvas.height-ballRadius) {
         if(x > paddleX && x < paddleX + paddleWidth) {
             dy = -dy;
-            score++;
-            
-            
-            
         }
         else {
             alert("GAME OVER");
@@ -121,17 +96,11 @@ function draw() {
     
     x += dx;
     y += dy;
-
-    
 }
-// funcion autogenerada hasta que sea detenida
+//funcion autogenerada hasta que sea detenida
+//setInterval(draw, 100);
 
-if (score % 2){
-    speed = speed-1;
-}
- var interval = setInterval(draw, speed);
-
-
+const interval = setInterval(draw, 10);
 
 
 
