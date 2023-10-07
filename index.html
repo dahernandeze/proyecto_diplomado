@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tests</title>
+    
+    <link rel="stylesheet" href="./css/login_test.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body body onload="checkCanvasIsSupported();"style="background: #29174a">
+  <div id="outer">
+        <header class="header order-last" id="tm-header">
+          <nav class="navbar">
+              <div class="collapse navbar-collapse single-page-nav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#section-1"><span class="icn"><i class="fab fa-drupal"></i></span> Game</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#section-2"><span class="icn"><i class="fab fa-github-alt"></i></span> Login</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#section-3"><span class="icn"><i class="far fa-chart-bar"></i></span> Ranking</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#section-4"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+
+      <button class="navbar-button collapsed" type="button">
+        <span class="menu_icon">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </span>
+      </button>
+
+
+
+      <main id="content-box" class="order-first">
+        <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="#" id="section-1">
+            <div class="container">
+                <style>
+                    /* * {
+                      padding: 0;
+                      margin: 0;
+                    }
+                    canvas {
+                      background: #eee;
+                      display: block;
+                      margin: 0 auto;
+                    } */
+                  </style>
+                  <canvas id="myCanvas" width="680" height="420" style="border: solid 1px gray;"></canvas>
+                <!--<div class="item">
+                    <div class="bg-blue-transparent logo-fa"><span><i class="fas fa-2x fa-atom"></i></span> Simply Amazed</div>
+                    <div class="bg-blue-transparent simple"><p>Your simplest HTML template, the most amazing page ever, yet free!</p></div>
+                </div>-->
+            </div>
+        </div>
+
+        <section class="work-section section" id="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="item col-md-4">
+                        <div class="tm-work-item-inner">
+                            <div class="icn"><button class="btn"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i></button></div>
+                            <h3>get into</h3>
+                            <p></p>
+                        </div>                        
+                    </div>
+                    <div class="item col-md-4 one">
+                        <div class="tm-work-item-inner">
+                            <div class="icn"><button class="btn"><i class="fa fa-3x fa-user-circle" href></i></button></div>
+                            <h3>sing up</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item col-md-4 two">
+                        <div class="tm-work-item-inner">
+                            <div class="icn"><button class="btn"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i></button></div>
+                            <h3>setting</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <h2><button class="button" id="form-open">Login</button></h2>
+                    
+
+
+                           
+                </div>
+
+                
+
+
+            </div>
+
+                   <!-- FORMULARIOS -->
+    <section class="home">  
+        <div class="form_container">
+          <i class="uil uil-times form_close"></i>
+          <!-- FORMULARIO LOGIN -->
+          <div class="form login_form">
+            <form action="#">
+              <h2>Login</h2>
+  
+              <div class="input_box">
+                <input type="email" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Enter your password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password?</a>
+              </div>
+  
+              <button class="button">Login Now</button>
+  
+              <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+            </form>
+          </div>
+  
+          <!-- FORMULARIO REGISTRO -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2>Signup</h2>
+  
+              <div class="input_box">
+                <input type="email" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Create password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" placeholder="Confirm password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <button class="button">Signup Now</button>
+  
+              <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+            </form>
+          </div>
+        </div>
+      </section>        
+        </section>
+
+        <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/section-3-bg.jpg" id="section-3">
+            <div class="container">
+                <div class="title text-right">
+                    <h2>Ranking</h2>
+                </div>
+                <div class="mx-auto gallery-slider">
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-01.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-02.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-03.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-04.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-05.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-06.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-07.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-08.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-julia item">
+                        <img src="img/gallery-img-09.jpg" alt="Image">
+                        <figcaption>
+                            <div>
+                                <p>Julia dances in the deep dark</p>
+                            </div>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section" id="section-4">
+            <div class="container">
+                <div class="title">
+                    <h3>Contáctenos</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 mb-4 contact-form">
+                        <div class="form tm-contact-item-inner">
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <input name="name" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="textarea form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group text-right">
+                                    <input type="submit" class="btn btn-primary" value="Send it">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 contact-details">
+                        <div class="tm-contact-item-inner-2">
+                            <p>Nam mollis felis elementum, placerat dolor id, vehicula libero. Etiam dui nisl, mattis ut rhoncus et, cursus ut diam.</p>
+                            <ul class="font-weight-light">
+                                <li>
+                                    <span class="icn"><i class="fas fa-mobile-alt"></i></span>
+                                    <span class="lbl">Tel:</span> <a href="#">010-020-0340</a>
+                                </li>
+                                <li>
+                                    <span class="icn"><i class="fas fa-at"></i></span>
+                                    <span class="lbl">Email:</span> <a href="#">info@company.com</a>
+                                </li>
+                                <li>
+                                    <span class="icn"><i class="fas fa-globe-asia"></i></span>
+                                    <span class="lbl">URL:</span> <a href="#">www.company.com</a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-3 col-md-12 map">
+                        <!-- Map -->
+                        <div class="map-outer tm-mb-40">
+                            <div class="gmap-canvas">
+                                <iframe width="100%" height="400" id="gmap-canvas"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1419620793604!2d-75.56760231472408!3d6.245015510220927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442859d833cfa3%3A0xa3fca5c91547777f!2sCESDE!5e0!3m2!1ses-419!2sco!4v1696648560803!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <footer class="footer container container-2">
+                <div class="row"> 
+                    <p class="col-sm-7">Copyright CESDE 2023</p>
+                    <p class="col-sm-5 text-right design">Diseño: <a rel="nofollow" href="https://www.cesde.edu.co/" target="_parent">CESDE</a></p>
+                </div>
+            </footer>
+        </section>
+      </main> 
+
+      
+</div>
+
+
+<script src="./game.js"></script>
+<script src="./login_test.js"></script>
+</body>
+</html>
